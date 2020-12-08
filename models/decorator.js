@@ -18,7 +18,13 @@ Decorator.prototype.calculateLitres = function(){
 
 Decorator.prototype.hasEnoughPaint = function(room){
     return this.calculateLitres() >= room.squareMeters;
-}
+};
+
+Decorator.prototype.paintRoom = function(room){
+    if(this.hasEnoughPaint(room)){
+        room.isPainted = true;
+    }
+};
 
 
 
