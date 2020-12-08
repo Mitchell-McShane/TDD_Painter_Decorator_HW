@@ -18,4 +18,10 @@ describe('Room', function (){
         const paint = false;
         assert.strictEqual(room.isPainted, paint);
     });
+
+    it('should be able to be painted', function() {
+        room.paint();
+        const paint = true;
+        assert.strictEqual(room.isPainted, paint);
+    })
 })
