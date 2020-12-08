@@ -13,4 +13,9 @@ describe('Room', function (){
         const inSquareMeters = 30;
         assert.strictEqual(room.squareMeters, inSquareMeters);
     });
+
+    it('should start not painted', function() {
+        const paint = false;
+        assert.strictEqual(room.isPainted, paint);
+    });
 })
